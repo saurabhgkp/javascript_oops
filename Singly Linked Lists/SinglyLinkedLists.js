@@ -21,7 +21,7 @@ class Singlist {
             this.tail = newNode
         }
         this.length++
-        console.log(this)
+
         return this
     }
 
