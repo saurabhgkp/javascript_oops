@@ -44,6 +44,31 @@ class SinglyLinkLists {
         console.log(this)
         return current
     }
+
+    shift() {
+        if (!this.head) return undefined
+        let currentHead = this.head
+        this.head = currentHead.next
+        this.length--
+        if (this.length === 0) {
+            this.tail = null
+        }
+
+        return currentHead
+    }
+    unshift(val) {
+        let unshiftNode = new Node(val)
+        if (!this.head) {
+            this.head = unshiftNode
+            this.tailthis.head
+        }
+        unshiftNode.next = this.head
+        this.head = unshiftNode
+        this.length++
+        console.log(this)
+        return this
+    }
+
 }
 // const node1 = new Node("gs")
 // console.log(node1)
