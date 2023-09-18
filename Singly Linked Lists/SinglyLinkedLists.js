@@ -1,10 +1,10 @@
 class Node {
     constructor(val) {
         this.val = val
-        this.next = null
+        this.next = this.val
     }
 }
-class Singlist {
+class SinglyLinkLists {
     constructor() {
         this.head = null
         this.tail = null
@@ -41,13 +41,17 @@ class Singlist {
             this.head = null
             this.tail = null
         }
-        //   console.log(this)
+        console.log(this)
         return current
     }
 }
 // const node1 = new Node("gs")
 // console.log(node1)
-const node1 = new Singlist()
+const node1 = new SinglyLinkLists()
 node1.push("111")
 node1.push("222")
+node1.push("333")
+node1.push("444")
+node1.pop()
+node1.pop()
 node1.pop()
