@@ -62,8 +62,10 @@ class SinglyLinkLists {
             this.head = unshiftNode
             this.tailthis.head
         }
-        unshiftNode.next = this.head
-        this.head = unshiftNode
+        else {
+            unshiftNode.next = this.head
+            this.head = unshiftNode
+        }
         this.length++
         console.log(this)
         return this
