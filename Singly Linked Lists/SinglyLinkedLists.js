@@ -70,6 +70,18 @@ class SinglyLinkLists {
         console.log(this)
         return this
     }
+    get(index) {
+        if (index < 0 || index > this.length) return null
+        let current = this.head
+        let getvalue = current
+        let count = 0
+        while (count !== index) {
+            getvalue = current
+            current = current.next
+            count++
+        }
+        return getvalue
+    }
 
 }
 // const node1 = new Node("gs")
