@@ -82,7 +82,12 @@ class SinglyLinkLists {
         }
         return getvalue
     }
-
+    set(index, val) {
+        let setVal = new Node(val)
+        let temp = this.get(index - 1)
+        setVal.next = this.get(index)
+        temp.next = setVal
+    }
 }
 // const node1 = new Node("gs")
 // console.log(node1)
